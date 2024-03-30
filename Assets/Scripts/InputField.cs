@@ -9,7 +9,6 @@ public class InputField : MonoBehaviour
 
    void OnMouseDown() 
    {
-    Debug.Log("Column number is" + column);
     gm.SelectColumn(column);
     gm.TakeTurn(column);
    }

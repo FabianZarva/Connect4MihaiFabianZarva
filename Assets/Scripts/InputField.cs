@@ -9,7 +9,11 @@ public class InputField : MonoBehaviour
 
    void OnMouseDown() 
    {
-    gm.SelectColumn(column);
-    gm.TakeTurn(column);
+       gm.SelectColumn(column);
+   }
+
+   void OnMouseOver()
+   {
+      gm.HoverColumn(column);
    }
 }

@@ -19,6 +19,11 @@ public class GameManager : MonoBehaviour
     public GameObject winCanvas2;
     public GameObject drawCanvas;
 
+     public Text timerText; // Reference to the Text component displaying the timer
+    public float turnTime = 20f; // Time allocated for each player's turn
+    private float timer; // Timer for tracking turn time
+
+
     // Dimensions of the game board
     public int heightOfBoard = 6;
     public int lengthOfBoard = 7;
@@ -42,6 +47,32 @@ public class GameManager : MonoBehaviour
         boardState = new int[lengthOfBoard, heightOfBoard];
         player1Ghost.SetActive(false);
         player2Ghost.SetActive(false);
+         StartTurnTimer(); // Start the turn timer for the first player
+    }
+
+      void Update()
+    {
+        if (!gamePaused && !playerWon)
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0f)
+            {
+                SkipTurn();
+            }
+            UpdateTimerText(); // Update the timer text on the screen
+        }
+    }
+
+     // Start the timer for the current player's turn
+    void StartTurnTimer()
+    {
+        timer = turnTime;
+        UpdateTimerText(); // Update the timer text on the screen when starting the timer
+    }
+
+      void UpdateTimerText()
+    {
+        timerText.text = Mathf.Ceil(timer).ToString(); // Display the remaining time as an integer
     }
 
     // Hovering with the mouse over columns
@@ -112,7 +143,22 @@ public class GameManager : MonoBehaviour
                 playerWon = true; 
                 drawCanvas.SetActive(true);
             }
+            StartTurnTimer(); // Restart the turn timer after making a move
         }
+    }
+
+     void SkipTurn()
+    {
+        if (player1Turn)
+        {
+            Debug.Log("Player 1's turn has been skipped!");
+        }
+        else
+        {
+            Debug.Log("Player 2's turn has been skipped!");
+        }
+        player1Turn = !player1Turn; // Switch to the other player's turn
+        StartTurnTimer(); // Restart the turn timer for the next player
     }
 
     // The board is updated after a piece is dropped

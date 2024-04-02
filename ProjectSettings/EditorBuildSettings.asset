@@ -9,6 +9,30 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 615c6eb75e66cd147b06006ec5b2663d
   - enabled: 1
-    path: Assets/Scenes/MultiplayerOffline.unity
+    path: Assets/Scenes/PvP/MultiplayerOffline.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline01.unity
+    guid: c5230f9c975d39441b00896644699d0a
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline02.unity
+    guid: 7b8983b4fa34f14479a50252704ba4d0
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline10.unity
+    guid: 070dd4eb4013c214493348f94aaf5cd4
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline11.unity
+    guid: 6cf485f32ccfdb641b391c69ad505eda
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline12.unity
+    guid: 0dcb371f431b9be4fa7319b4699257ef
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline20.unity
+    guid: b8425525b97ed9d4094029a189153ba6
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline21.unity
+    guid: 7f8f9b0d5833f954fbe8313bdf2a12b8
+  - enabled: 1
+    path: Assets/Scenes/PvP/MultiplayerOffline22.unity
+    guid: dc1f8e948d2c4f84b821220b6a426c29
   m_configObjects: {}

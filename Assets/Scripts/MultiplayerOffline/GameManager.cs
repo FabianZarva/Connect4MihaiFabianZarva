@@ -20,9 +20,10 @@ public class GameManager : MonoBehaviour
     public GameObject drawCanvas;
 
      public Text timerText; // Reference to the Text component displaying the timer
-    public float turnTime = 20f; // Time allocated for each player's turn
+    public float turnTime = 15f; // Time allocated for each player's turn
     private float timer; // Timer for tracking turn time
 
+    
 
     // Dimensions of the game board
     public int heightOfBoard = 6;
@@ -256,11 +257,16 @@ public class GameManager : MonoBehaviour
     }
 
     // Restarting the game
-    public void RestartGame()
+    public void RestartMatch()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
+    public void RestartRound()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+  
     //Loading the Main Menu
    public void Menu()
     {
@@ -272,4 +278,41 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void AdvanceLevel01()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void AdvanceLevel02()
+    {
+        SceneManager.LoadScene(3);
+    }
+    
+    public void AdvanceLevel10()
+    {
+        SceneManager.LoadScene(4);
+    }
+    public void AdvanceLevel11()
+    {
+        SceneManager.LoadScene(5);
+    }
+    public void AdvanceLevel12()
+    {
+        SceneManager.LoadScene(6);
+    }
+   
+    public void AdvanceLevel20()
+    {
+        SceneManager.LoadScene(7);
+    }
+    public void AdvanceLevel21()
+    {
+        SceneManager.LoadScene(8);
+    }
+    public void AdvanceLevel22()
+    {
+        SceneManager.LoadScene(9);
+    }
+   
 }

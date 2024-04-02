@@ -31,8 +31,13 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Restarting the game
-    public void Restart()
+    public void RestartRounds()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reloading the current scene to restart the game - giving the players another round
+    }
+
+    public void RestartMatchs()
+    {
+        SceneManager.LoadScene(1);
     }
 }

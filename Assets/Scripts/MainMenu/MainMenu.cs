@@ -5,10 +5,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayPVPGame()
     {
         SceneManager.LoadSceneAsync(1);
     }
+
+    public void PlayPVAIGame()
+    {
+        SceneManager.LoadScene(10);
+    }
+
 
     public void QuitGame()
     {

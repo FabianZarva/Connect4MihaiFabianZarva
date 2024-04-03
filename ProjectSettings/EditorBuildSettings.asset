@@ -35,4 +35,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PvP/MultiplayerOffline22.unity
     guid: dc1f8e948d2c4f84b821220b6a426c29
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI.unity
+    guid: 186e21a1f908d7847bbe36217f179c5e
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI01.unity
+    guid: 023bb93402094ce48a84814babb27f14
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI02.unity
+    guid: 92786ec3fa80eca40b1d92571362f9ae
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI10.unity
+    guid: e4d9e4004e4f372459730e144f237a4f
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI11.unity
+    guid: a1c7f6d8c4be6444d9e22736535fe556
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI12.unity
+    guid: 421007b7922236b478be032a0a06142f
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI20.unity
+    guid: 20d945672849385439fa8d3696cabe1a
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI21.unity
+    guid: 8a8cdd436d6b7324fb146a4cbd25674d
+  - enabled: 1
+    path: Assets/Scenes/PlayerVsAI/PlayerVsAI22.unity
+    guid: 89e22f21e176c9f478cbdfabade7b1df
   m_configObjects: {}

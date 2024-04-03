@@ -20,6 +20,7 @@ public class PauseMenu : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("MainMenu"); // Loading the main menu scene
+        Time.timeScale = 1;
     }
 
     // Resuming the game
@@ -34,10 +35,12 @@ public class PauseMenu : MonoBehaviour
     public void RestartRounds()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reloading the current scene to restart the game - giving the players another round
+        Time.timeScale = 1;
     }
 
     public void RestartMatchs()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }

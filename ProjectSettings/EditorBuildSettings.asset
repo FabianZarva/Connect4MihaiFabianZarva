@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 615c6eb75e66cd147b06006ec5b2663d
+    guid: 2bdfabd19aac96b43ac33eda58400c40
   - enabled: 1
     path: Assets/Scenes/PvP/MultiplayerOffline.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab

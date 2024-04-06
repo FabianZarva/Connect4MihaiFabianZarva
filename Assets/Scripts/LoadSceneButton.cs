@@ -7,7 +7,7 @@ public class LoadSceneButton : MonoBehaviour
 {
     public string sceneName; // Name of the scene to load
 
-    // Method to handle button click event
+    // Load scene on button press
     public void LoadSceneOnClick()
     {
         SceneManager.LoadScene(sceneName); // Load the desired scene

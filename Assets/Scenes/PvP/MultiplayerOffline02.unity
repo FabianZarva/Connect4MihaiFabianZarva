@@ -3767,7 +3767,7 @@ MonoBehaviour:
   winCanvas2: {fileID: 1763966507}
   drawCanvas: {fileID: 300746400}
   timerText: {fileID: 565731055}
-  turnTime: 20
+  turnTime: 15
   heightOfBoard: 6
   lengthOfBoard: 7
   spawnLoc:

@@ -38,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    // Loads the first round scene (restarts the whole match)
     public void RestartMatchs()
     {
         SceneManager.LoadScene(1);
